@@ -5,7 +5,7 @@ var path = require('path');
 var getExtension = module.exports.getExtension = function(filename) {
     var ext = path.extname(filename||'').split('.');
     return ext[ext.length - 1];
-}
+};
 
 var isTrue = exports.isTrue = function(value){
   return !!reTrue.exec(''+value);
